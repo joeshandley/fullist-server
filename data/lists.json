@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Test list",
+    "items": [
+      { "id": 1, "itemName": "Apple" },
+      { "id": 2, "itemName": "Brown Bread" },
+      { "id": 3, "itemName": "Milk" }
+    ]
+  }
+]
