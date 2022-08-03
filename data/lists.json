@@ -1,11 +1,20 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Test list",
     "items": [
-      { "id": 1, "itemName": "Apple" },
-      { "id": 2, "itemName": "Brown Bread" },
-      { "id": 3, "itemName": "Milk" }
+      { "id": "1", "itemName": "Apple" },
+      { "id": "2", "itemName": "Brown Bread" },
+      { "id": "3", "itemName": "Milk" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Second Test list",
+    "items": [
+      { "id": "1", "itemName": "Banana" },
+      { "id": "2", "itemName": "White Bread" },
+      { "id": "3", "itemName": "Orange Juice" }
     ]
   }
 ]
