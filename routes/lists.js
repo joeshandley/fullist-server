@@ -128,8 +128,29 @@ router.patch("/:id", (req, res) => {
   });
 });
 
-//PUT request for editing list item
-router.put("/:listId/:itemId", (req, res) => {
+//PATCH request for toggling list favourites
+router.patch("/:listId/favourite", (req, res) => {
+  const favouritedList = lists.find((list) => list.id === req.params.listId);
+  if (!favouritedList) {
+    return res.status(404).json({
+      errorMessage: `List with id ${req.params.listId} cannot be found`,
+    });
+  }
+
+  favouritedList.favourite
+    ? (favouritedList.favourite = false)
+    : (favouritedList.favourite = true);
+
+  const updatedLists = lists.map((list) =>
+    list.id === req.params.listId ? favouritedList : list
+  );
+
+  utils.writeToJsonFile(listsJSONFile, updatedLists);
+  res.status(200).json({ listFavourited: favouritedList.favourite });
+});
+
+//PATCH request for editing list item
+router.patch("/:listId/:itemId", (req, res) => {
   const newList = lists.find((list) => list.id === req.params.listId);
   if (!newList) {
     return res.status(404).json({
