@@ -100,4 +100,34 @@ router.delete("/:listId/:itemId", (req, res) => {
     .json({ deleteMessage: `Item with id ${req.params.itemId} was deleted` });
 });
 
+//PATCH request for changing the list name
+router.patch("/:id", (req, res) => {
+  const patchedList = lists.find((list) => list.id === req.params.id);
+  if (!patchedList) {
+    return res.status(404).json({
+      errorMessage: `List with id ${req.params.id} cannot be found`,
+    });
+  }
+
+  if (!req.body.name) {
+    return res.status(400).json({
+      errorMessage: "List name cannot be blank. Please enter a list name",
+    });
+  }
+
+  patchedList.name = req.body.name;
+
+  const updatedLists = lists.map((list) =>
+    list.id === req.params.id ? patchedList : list
+  );
+
+  utils.writeToJsonFile(listsJSONFile, updatedLists);
+  res
+    .status(200)
+    .json({
+      patchMessage: `List was renamed to ${req.body.name}`,
+      success: true,
+    });
+});
+
 module.exports = router;

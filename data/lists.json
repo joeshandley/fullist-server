@@ -1,16 +1,15 @@
 [
   {
     "id": "1",
-    "name": "Test list",
+    "name": "My Weekly Shop 🛒",
     "items": [
-      { "id": "1", "name": "Apple", "quantity": 1 },
-      { "id": "2", "name": "Brown Bread", "quantity": 1 },
-      { "id": "3", "name": "Milk", "quantity": 1 }
+      { "id": "1", "name": "Apples", "quantity": 6 },
+      { "id": "2", "name": "Brown Bread", "quantity": 1 }
     ]
   },
   {
     "id": "2",
-    "name": "Second Test list",
+    "name": "New List",
     "items": [
       { "id": "1", "name": "Banana", "quantity": 1 },
       { "id": "2", "name": "White Bread", "quantity": 1 },
