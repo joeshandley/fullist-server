@@ -3,18 +3,23 @@
     "id": "1",
     "name": "Test list",
     "items": [
-      { "id": "1", "itemName": "Apple" },
-      { "id": "2", "itemName": "Brown Bread" },
-      { "id": "3", "itemName": "Milk" }
+      { "id": "1", "name": "Apple", "quantity": 1 },
+      { "id": "2", "name": "Brown Bread", "quantity": 1 },
+      { "id": "3", "name": "Milk", "quantity": 1 },
+      {
+        "id": "a387b5ef-f4d5-4763-9b17-826a3045bdeb",
+        "name": "Cabbage",
+        "quantity": 1
+      }
     ]
   },
   {
     "id": "2",
     "name": "Second Test list",
     "items": [
-      { "id": "1", "itemName": "Banana" },
-      { "id": "2", "itemName": "White Bread" },
-      { "id": "3", "itemName": "Orange Juice" }
+      { "id": "1", "name": "Banana", "quantity": 1 },
+      { "id": "2", "name": "White Bread", "quantity": 1 },
+      { "id": "3", "name": "Orange Juice", "quantity": 1 }
     ]
   }
 ]
