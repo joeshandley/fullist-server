@@ -3,7 +3,7 @@
     "id": "1",
     "name": "My Weekly Shop 🛒",
     "items": [
-      { "id": "1", "name": "Apples", "quantity": 6 },
+      { "id": "1", "name": "Orange", "quantity": 6 },
       { "id": "2", "name": "Brown Bread", "quantity": 1 }
     ]
   },

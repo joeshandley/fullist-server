@@ -91,7 +91,7 @@ router.delete("/:listId/:itemId", (req, res) => {
   newList.items = newList.items.filter((item) => item.id !== req.params.itemId);
 
   const updatedLists = lists.map((list) =>
-    list.id === req.params.id ? newList : list
+    list.id === req.params.listId ? newList : list
   );
 
   utils.writeToJsonFile(listsJSONFile, updatedLists);
@@ -122,12 +122,40 @@ router.patch("/:id", (req, res) => {
   );
 
   utils.writeToJsonFile(listsJSONFile, updatedLists);
-  res
-    .status(200)
-    .json({
-      patchMessage: `List was renamed to ${req.body.name}`,
-      success: true,
+  res.status(200).json({
+    patchMessage: `List was renamed to ${req.body.name}`,
+    success: true,
+  });
+});
+
+//PUT request for editing list item
+router.put("/:listId/:itemId", (req, res) => {
+  const newList = lists.find((list) => list.id === req.params.listId);
+  if (!newList) {
+    return res.status(404).json({
+      errorMessage: `List with id ${req.params.listId} cannot be found`,
     });
+  }
+
+  const item = newList.items.find((item) => item.id === req.params.itemId);
+  if (!item) {
+    return res.status(404).json({
+      errorMessage: `Item with id ${req.params.itemId} cannot be found`,
+    });
+  }
+
+  const newItem = { ...item, ...req.body };
+
+  newList.items = newList.items.map((item) =>
+    item.id === req.params.itemId ? newItem : item
+  );
+
+  const updatedLists = lists.map((list) =>
+    list.id === req.params.listId ? newList : list
+  );
+
+  utils.writeToJsonFile(listsJSONFile, updatedLists);
+  res.status(200).json({ updatedItem: newItem });
 });
 
 module.exports = router;
