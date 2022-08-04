@@ -5,12 +5,7 @@
     "items": [
       { "id": "1", "name": "Apple", "quantity": 1 },
       { "id": "2", "name": "Brown Bread", "quantity": 1 },
-      { "id": "3", "name": "Milk", "quantity": 1 },
-      {
-        "id": "a387b5ef-f4d5-4763-9b17-826a3045bdeb",
-        "name": "Cabbage",
-        "quantity": 1
-      }
+      { "id": "3", "name": "Milk", "quantity": 1 }
     ]
   },
   {
