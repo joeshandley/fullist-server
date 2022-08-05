@@ -2,6 +2,7 @@
   {
     "id": "1",
     "name": "My Weekly Shop 🛒",
+    "favourite": true,
     "items": [
       { "id": "1", "name": "Orange", "quantity": 6 },
       { "id": "2", "name": "Brown Bread", "quantity": 1 }
@@ -9,7 +10,28 @@
   },
   {
     "id": "2",
-    "name": "New List",
+    "name": "New List 1",
+    "favourite": true,
+    "items": [
+      { "id": "1", "name": "Banana", "quantity": 1 },
+      { "id": "2", "name": "White Bread", "quantity": 1 },
+      { "id": "3", "name": "Orange Juice", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "New List 2",
+    "favourite": true,
+    "items": [
+      { "id": "1", "name": "Banana", "quantity": 1 },
+      { "id": "2", "name": "White Bread", "quantity": 1 },
+      { "id": "3", "name": "Orange Juice", "quantity": 1 }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "New List 3",
+    "favourite": true,
     "items": [
       { "id": "1", "name": "Banana", "quantity": 1 },
       { "id": "2", "name": "White Bread", "quantity": 1 },
