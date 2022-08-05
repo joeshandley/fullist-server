@@ -72,6 +72,23 @@ router.post("/:id/add-item", (req, res) => {
   res.status(201).json({ itemAdded: newItem, success: true });
 });
 
+//DELETE request to remove single list
+router.delete("/:listId", (req, res) => {
+  const deleteList = lists.some((list) => list.id === req.params.listId);
+  if (!deleteList) {
+    return res.status(404).json({
+      errorMessage: `List with id ${req.params.listId} cannot be found`,
+    });
+  }
+
+  const updatedLists = lists.filter((list) => list.id !== req.params.listId);
+
+  utils.writeToJsonFile(listsJSONFile, updatedLists);
+  res
+    .status(200)
+    .json({ deleteMessage: `List with id ${req.params.listId} was deleted` });
+});
+
 //DELETE request to remove item from list
 router.delete("/:listId/:itemId", (req, res) => {
   const newList = lists.find((list) => list.id === req.params.listId);
