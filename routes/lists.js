@@ -34,7 +34,7 @@ router.post("/", (_req, res) => {
   };
 
   utils.writeToJsonFile(listsJSONFile, [...lists, newList]);
-  res.status(201).json({ newlistCreated: newList, success: true });
+  res.status(201).json({ newListCreated: newList, success: true });
 });
 
 //POST request for new list item
