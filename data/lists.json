@@ -11,7 +11,7 @@
   {
     "id": "2",
     "name": "New List 1",
-    "favourite": true,
+    "favourite": false,
     "items": [
       { "id": "1", "name": "Banana", "quantity": 1 },
       { "id": "2", "name": "White Bread", "quantity": 1 },
@@ -21,7 +21,7 @@
   {
     "id": "3",
     "name": "New List 2",
-    "favourite": true,
+    "favourite": false,
     "items": [
       { "id": "1", "name": "Banana", "quantity": 1 },
       { "id": "2", "name": "White Bread", "quantity": 1 },
@@ -37,5 +37,11 @@
       { "id": "2", "name": "White Bread", "quantity": 1 },
       { "id": "3", "name": "Orange Juice", "quantity": 1 }
     ]
+  },
+  {
+    "id": "6e43e2e9-5248-4522-b0fd-3ef696a8c3c4",
+    "name": "",
+    "favourite": false,
+    "items": []
   }
 ]

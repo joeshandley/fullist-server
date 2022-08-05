@@ -24,23 +24,18 @@ router.get("/:id", (req, res) => {
   res.status(200).json(list);
 });
 
-// //POST request for new list
-// router.post("/", (req, res) => {
-//   if (!req.body.name) {
-//     return res.status(400).json({
-//       errorMessage: "Please provide item name",
-//     });
-//   }
+//POST request for new list
+router.post("/", (_req, res) => {
+  const newList = {
+    id: id,
+    name: "",
+    favourite: false,
+    items: [],
+  };
 
-//   const newItem = {
-//     id: id,
-//     name: req.body.name,
-//     quantity: req.body.quantity,
-//   };
-
-//   utils.writeToJsonFile(listsJSONFile, [...lists, newItem]);
-//   res.status(201).json({ newlistCreated: newItem, success: true });
-// });
+  utils.writeToJsonFile(listsJSONFile, [...lists, newList]);
+  res.status(201).json({ newlistCreated: newList, success: true });
+});
 
 //POST request for new list item
 router.post("/:id/add-item", (req, res) => {
