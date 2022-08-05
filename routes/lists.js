@@ -13,6 +13,12 @@ router.get("/", (_req, res) => {
   res.status(200).json(lists);
 });
 
+//GET request for favourite lists
+router.get("/favourites", (_req, res) => {
+  const favourites = lists.filter((list) => list.favourite);
+  res.status(200).json(favourites);
+});
+
 //GET request for one list
 router.get("/:id", (req, res) => {
   const list = lists.find((list) => list.id === req.params.id);
