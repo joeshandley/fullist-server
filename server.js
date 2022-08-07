@@ -9,6 +9,8 @@ app.use(cors());
 
 const listsRouter = require("./routes/lists.js");
 app.use("/lists", listsRouter);
+const stockRouter = require("./routes/stock.js");
+app.use("/stock", stockRouter);
 
 // Listen to port
 const PORT = process.env.PORT || 8080;
