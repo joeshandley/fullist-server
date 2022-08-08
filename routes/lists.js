@@ -43,11 +43,11 @@ router.post("/", (_req, res) => {
   res.status(201).json({ newListCreated: newList, success: true });
 });
 
-//POST request for new list item
-router.post("/:id/add-item", (req, res) => {
-  if (!req.body.name) {
+//POST request for new list items
+router.post("/:id/add-items", (req, res) => {
+  if (req.body.items.length === 0) {
     return res.status(400).json({
-      errorMessage: "Please provide item name",
+      errorMessage: "Please provide at least one item",
     });
   }
 
@@ -58,19 +58,22 @@ router.post("/:id/add-item", (req, res) => {
     });
   }
 
-  const newItem = {
-    id: id,
-    name: req.body.name,
-    quantity: req.body.quantity,
-  };
-  thisList.items.push(newItem);
+  const newItems = req.body.items.map((item) => {
+    const newItem = {
+      id: id,
+      name: item.name,
+      quantity: item.quantity,
+    };
+    thisList.items.push(newItem);
+    return newItem;
+  });
 
   const updatedLists = lists.map((list) =>
     list.id === req.params.id ? thisList : list
   );
 
   utils.writeToJsonFile(listsJSONFile, updatedLists);
-  res.status(201).json({ itemAdded: newItem, success: true });
+  res.status(201).json({ itemsAdded: newItems, success: true });
 });
 
 //DELETE request to remove single list
