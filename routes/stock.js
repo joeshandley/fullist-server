@@ -6,9 +6,8 @@ const path = require("path");
 const stockJSONFile = path.join(__dirname, "../data/stock.json");
 const stock = require(stockJSONFile);
 
-//GET request for checking what is in stock
+//POST request for checking what is in stock
 router.post("/", (req, res) => {
-  console.log(req.body);
   const inStock = req.body.shops.map((location) => {
     const locationStock = stock.find((shop) => shop.shop === location).stock;
     return req.body.list.every((item) =>
