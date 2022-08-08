@@ -18,4 +18,17 @@ router.get("/recipes", (_req, res) => {
   res.status(200).json(recipes.slides);
 });
 
+//GET request for retrieving item lists to add to user lists
+router.get("/:type/:slideId", (req, res) => {
+  const carousel = carousels.find(
+    (carousel) => carousel.id === req.params.type
+  );
+  const slide = carousel.slides.find(
+    (slide) => slide.id === req.params.slideId
+  );
+  console.log(carousel.slides);
+  const items = slide.items;
+  res.status(200).json(items);
+});
+
 module.exports = router;
