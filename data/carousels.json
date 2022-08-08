@@ -1,0 +1,48 @@
+[
+  {
+    "id": "items",
+    "slides": [
+      {
+        "id": 1,
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples1"
+      },
+      {
+        "id": 2,
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples2"
+      },
+      {
+        "id": 3,
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples3"
+      }
+    ]
+  },
+  {
+    "id": "recipes",
+    "slides": [
+      {
+        "id": 1,
+        "src": "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1558_1_1436795948.jpg?tr=w-800,h-1066",
+        "alt": "Spaghetti topped with lardons, grated parmesan and pepper on a white oval place set on wood",
+        "text": "Spaghetti carbonara"
+      },
+      {
+        "id": 2,
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples2"
+      },
+      {
+        "id": 3,
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples3"
+      }
+    ]
+  }
+]

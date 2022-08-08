@@ -7,6 +7,8 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+const homeRouter = require("./routes/home.js");
+app.use("/home", homeRouter);
 const listsRouter = require("./routes/lists.js");
 app.use("/lists", listsRouter);
 const stockRouter = require("./routes/stock.js");
