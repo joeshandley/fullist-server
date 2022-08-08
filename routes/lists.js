@@ -59,6 +59,7 @@ router.post("/:id/add-items", (req, res) => {
   }
 
   const newItems = req.body.items.map((item) => {
+    const id = uuidv4();
     const newItem = {
       id: id,
       name: item.name,
