@@ -1,0 +1,100 @@
+[
+  {
+    "id": "items",
+    "slides": [
+      {
+        "id": "1",
+        "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
+        "alt": "Three gala apples arranged on a white background",
+        "text": "Gala apples",
+        "items": [{ "name": "Gala apples", "quantity": "4" }]
+      },
+      {
+        "id": "2",
+        "src": "https://images.immediate.co.uk/production/volatile/sites/30/2021/12/Bowl-of-sprouts-8305212.jpg",
+        "alt": "Top down view of white bowl full of sprouts. The bowl is on a folded, light checked tea towel with a metal teaspoon placed diagonally next to it on a white wood surface",
+        "text": "Brussel sprouts",
+        "items": [{ "name": "Sprouts", "quantity": "1" }]
+      },
+      {
+        "id": "3",
+        "src": "http://cdn.shopify.com/s/files/1/2836/2982/products/gouda_hero_grande.jpg?v=1529434181",
+        "alt": "Two slices of gouda in red wax sat on a wooden table",
+        "text": "Gouda",
+        "items": [{ "name": "Gouda", "quantity": "1" }]
+      },
+      {
+        "id": "4",
+        "src": "https://cdn-prod.medicalnewstoday.com/content/images/articles/323/323169/greek-yoghurt-in-bowl.jpg",
+        "alt": "Top down view of greek yoghurt in a brown bowl on a dark brown wood surface. There is a tarnished silver spoon next to it",
+        "text": "Greek yoghurt",
+        "items": [{ "name": "Greek yoghurt", "quantity": "1" }]
+      },
+      {
+        "id": "5",
+        "src": "https://i2.wp.com/mygorgeousrecipes.com/wp-content/uploads/2019/01/How-to-Cook-Basmati-Rice-to-Perfection-13.jpg",
+        "alt": "Small white and blue plate topped with a mound of white basmati rice. It is on a dark background",
+        "text": "Basmati rice",
+        "items": [{ "name": "Basmati rice", "quantity": "1" }]
+      }
+    ]
+  },
+  {
+    "id": "recipes",
+    "slides": [
+      {
+        "id": "1",
+        "src": "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1558_1_1436795948.jpg?tr=w-800,h-1066",
+        "alt": "Spaghetti topped with lardons, grated parmesan and pepper on a white oval place set on wood",
+        "text": "Spaghetti carbonara",
+        "items": [
+          { "name": "pancetta", "quantity": "1" },
+          { "name": "parmesan", "quantity": "1" },
+          { "name": "eggs", "quantity": "3" },
+          { "name": "spaghetti", "quantity": "1" },
+          { "name": "garlic", "quantity": "1" },
+          { "name": "salted butter", "quantity": "1" }
+        ]
+      },
+      {
+        "id": "2",
+        "src": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/carrot-cake-f1b3d0c.jpg",
+        "alt": "Carrot cake topped with icing and walnuts with a slice taken out sat on a white cake stand. Below the stand is a knife with icing on it",
+        "text": "Carrot cake",
+        "items": [
+          { "name": "vegetable oil", "quantity": "1" },
+          { "name": "yoghurt", "quantity": "1" },
+          { "name": "eggs", "quantity": "4" },
+          { "name": "vanilla extract", "quantity": "1" },
+          { "name": "orange", "quantity": "1" },
+          { "name": "self-raising flour", "quantity": "1" },
+          { "name": "light muscovado sugar", "quantity": "1" },
+          { "name": "ground cinnamon", "quantity": "1" },
+          { "name": "nutmeg", "quantity": "1" },
+          { "name": "carrots", "quantity": "3" },
+          { "name": "sultanas", "quantity": "1" },
+          { "name": "walnuts", "quantity": "1" },
+          { "name": "salted butter", "quantity": "1" },
+          { "name": "icing sugar", "quantity": "1" },
+          { "name": "soft cheese", "quantity": "1" }
+        ]
+      },
+      {
+        "id": "3",
+        "src": "https://cdn.loveandlemons.com/wp-content/uploads/2021/10/butternut-squash-risotto-1.jpg",
+        "alt": "Two bowls of butternut squash risotto topped with small sage leaves. Each bowl has a fork in it and the bowls are sat on a marble surface",
+        "text": "Butternut squash risotto",
+        "items": [
+          { "name": "butternut squash", "quantity": "1" },
+          { "name": "olive oil", "quantity": "1" },
+          { "name": "sage leaves", "quantity": "1" },
+          { "name": "vegetable stock", "quantity": "1" },
+          { "name": "butter", "quantity": "1" },
+          { "name": "onion", "quantity": "1" },
+          { "name": "risotto rice", "quantity": "1" },
+          { "name": "parmesan", "quantity": "1" }
+        ]
+      }
+    ]
+  }
+]

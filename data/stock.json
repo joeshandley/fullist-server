@@ -1,0 +1,83 @@
+[
+  { "shop": "Aldi", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Amazon", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  {
+    "shop": "Asda",
+    "stock": ["white bread", "tomatoes", "milk", "pasta", "olives", "oranges"]
+  },
+  { "shop": "Booths", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Budgens", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Costco", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  {
+    "shop": "Dunnes Stores",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  },
+  {
+    "shop": "Farmfoods",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  },
+  { "shop": "Heron", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Iceland", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Lidl", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  { "shop": "Makro", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  {
+    "shop": "Marks and Spencer",
+    "stock": ["white bread", "tomatoes", "milk", "pasta", "olives", "chocolate"]
+  },
+  { "shop": "Mere", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  {
+    "shop": "Morrisons",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  },
+  {
+    "shop": "Planet Organic",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  },
+  {
+    "shop": "Sainsburys",
+    "stock": [
+      "white bread",
+      "tomatoes",
+      "milk",
+      "pasta",
+      "olives",
+      "apples",
+      "feta",
+      "capers"
+    ]
+  },
+  { "shop": "Spar", "stock": ["white bread", "tomatoes", "milk", "pasta"] },
+  {
+    "shop": "Tesco",
+    "stock": [
+      "white bread",
+      "tomatoes",
+      "milk",
+      "pasta",
+      "olives",
+      "brown bread",
+      "feta",
+      "capers"
+    ]
+  },
+  {
+    "shop": "The Co-operative Group",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  },
+  {
+    "shop": "Waitrose",
+    "stock": [
+      "white bread",
+      "tomatoes",
+      "milk",
+      "pasta",
+      "olives",
+      "caviar",
+      "brown bread"
+    ]
+  },
+  {
+    "shop": "Whole Foods Market",
+    "stock": ["white bread", "tomatoes", "milk", "pasta"]
+  }
+]
