@@ -7,21 +7,35 @@
         "src": "https://www.realfoods.co.uk/ProductImagesID/2832_1.jpg",
         "alt": "Three gala apples arranged on a white background",
         "text": "Gala apples",
-        "items": [{ "name": "gala apples", "quantity": "4" }]
+        "items": [{ "name": "Gala apples", "quantity": "4" }]
       },
       {
         "id": "2",
         "src": "https://images.immediate.co.uk/production/volatile/sites/30/2021/12/Bowl-of-sprouts-8305212.jpg",
         "alt": "Top down view of white bowl full of sprouts. The bowl is on a folded, light checked tea towel with a metal teaspoon placed diagonally next to it on a white wood surface",
-        "text": "Sprouts",
-        "items": [{ "name": "sprouts", "quantity": "1" }]
+        "text": "Brussel sprouts",
+        "items": [{ "name": "Sprouts", "quantity": "1" }]
       },
       {
         "id": "3",
         "src": "http://cdn.shopify.com/s/files/1/2836/2982/products/gouda_hero_grande.jpg?v=1529434181",
         "alt": "Two slices of gouda in red wax sat on a wooden table",
         "text": "Gouda",
-        "items": [{ "name": "gouda", "quantity": "1" }]
+        "items": [{ "name": "Gouda", "quantity": "1" }]
+      },
+      {
+        "id": "4",
+        "src": "https://cdn-prod.medicalnewstoday.com/content/images/articles/323/323169/greek-yoghurt-in-bowl.jpg",
+        "alt": "Top down view of greek yoghurt in a brown bowl on a dark brown wood surface. There is a tarnished silver spoon next to it",
+        "text": "Greek yoghurt",
+        "items": [{ "name": "Greek yoghurt", "quantity": "1" }]
+      },
+      {
+        "id": "5",
+        "src": "https://i2.wp.com/mygorgeousrecipes.com/wp-content/uploads/2019/01/How-to-Cook-Basmati-Rice-to-Perfection-13.jpg",
+        "alt": "Small white and blue plate topped with a mound of white basmati rice. It is on a dark background",
+        "text": "Basmati rice",
+        "items": [{ "name": "Basmati rice", "quantity": "1" }]
       }
     ]
   },
